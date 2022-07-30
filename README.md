@@ -23,13 +23,20 @@ API_SECRET=yoursecretstring
 TOKEN_HOUR_LIFESPAN=1
 ```
 
-Build and run the project
+Build and run the GO project
 
 ```bash
 cd go-restfulapi-example
 go build
 ./go-restfulapi-example
 
+```
+
+You also can build the Docker image and run the container from the image
+
+```bash
+docker build -t go-restful .
+docker run -d -p 3000:3000 go-restful
 ```
 
 API Endpoint: `http://localhost:3000`
